@@ -15,4 +15,8 @@
          AOSP default is 1533 -->
     <item name="auth_ripple_animation_duration" format="float" type="dimen">1533.0</item>
 
+    <!-- Should we vibrate on an icon animation of the shelf. This should only be active if the
+     vibrator is capable of subtle vibrations -->
+    <bool name="config_vibrateOnIconAnimation">true</bool>
+
 </resources>
