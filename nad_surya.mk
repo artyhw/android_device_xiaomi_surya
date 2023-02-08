@@ -11,14 +11,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from surya device
 $(call inherit-product, device/xiaomi/surya/device.mk)
 
-# Inherit from common aosp stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit from common Nusantara stuff.
+$(call inherit-product, vendor/nusantara/config/common_full_phone.mk)
 
-#target
+# Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
+
+# Nusantara Flags
+USE_GAPPS := true
 TARGET_SUPPORTS_QUICK_TAP := true
 
-PRODUCT_NAME := aosp_surya
+PRODUCT_NAME := nad_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := M2007J20CG
