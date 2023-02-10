@@ -14,6 +14,15 @@ $(call inherit-product, device/xiaomi/surya/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Inherit some riceDroid stuff.
+RICE_MAINTAINER := Kei's
+TARGET_SUPPORTS_QUICK_TAP := true
+SUSHI_BOOTANIMATION := 1080
+TARGET_BUILD_GRAPHENEOS_CAMERA := false
+WITH_GMS := true
+TARGET_CORE_GMS := true
+TARGET_USE_PIXEL_FINGERPRINT := true
+
 PRODUCT_NAME := lineage_surya
 PRODUCT_DEVICE := surya
 PRODUCT_BRAND := POCO
