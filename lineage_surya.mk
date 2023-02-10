@@ -16,6 +16,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Inherit some riceDroid stuff.
 RICE_MAINTAINER := Kei's
+RICE_CHIPSET := Snapdragon 732G │ sm7150-ac
 TARGET_SUPPORTS_QUICK_TAP := true
 SUSHI_BOOTANIMATION := 1080
 TARGET_BUILD_GRAPHENEOS_CAMERA := false
